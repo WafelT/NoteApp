@@ -29,6 +29,7 @@ button:hover {
 
 .app-wrapper {
     width: 25.9em;
+    margin-bottom: 3em;
 }
 
 .todo__list-heading {
@@ -94,13 +95,22 @@ button:hover {
     transition: .4s ease;
 }
 
-.task__item p {
+.task__text-wrapper {
+    display: flex;
+}
+
+.task__text {
     display: block;
 
     width: 15em;
     margin-right: 1.5em;
     overflow-wrap: break-word;
 
+    font-weight: 600;
+}
+
+.task__index {
+    margin-right: 0.5em;
     font-weight: 600;
 }
 
@@ -119,6 +129,7 @@ button:hover {
 
 .task__item-done {
     font-size: 0.55em;
+    user-select: none;
 
     margin-left: 0.5em;
     width: 5em;
